@@ -7,7 +7,9 @@ This script is designed to calculate interaction energies (Uab) between two sele
 
 Adjusting details in the current script allows you to use it to calculate whether the net forces are attractive or repulsive between the  center of mass of the pair selected, calculate only total contributions from a single selection, or use the AMBER force field.
 
-#   PARAMETERS of NAMDEnergy    
+# NAMDEnergy for X-PLOR format
+
+#  PARAMETERS of NAMDEnergy    
 
 
 **-ofile** *FILE*
