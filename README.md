@@ -9,6 +9,19 @@ Adjusting details in the current script allows you to use it to calculate whethe
 
 # NAMDEnergy for X-PLOR format
 
+If you want to use NAMD Energy and your force field is in X-PLOR format, we recommend downloading our version of NAMDEnergy [namdenergy-x-plor.tcl](namdenergy-x-plor.tcl) and modifying line 5 of the NAMDEnergy.tcl script as follows:
+
+Replace:
+
+    package require namdenergy
+
+With:
+
+    source namdenergy-x-plor.tcl
+
+After making this change, save it, and you can then execute it as indicated in the previous section.
+
+
 #  PARAMETERS of NAMDEnergy    
 
 
