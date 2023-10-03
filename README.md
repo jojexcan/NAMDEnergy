@@ -1,5 +1,5 @@
 # NAMDEnergy
-Run NAMDEnergy in command line
+*Run NAMDEnergy in command line*
 
 This script is designed to calculate interaction energies (Uab) between two selected groups of atoms from a molecular dynamics trajectory. Please make sure that you have correctly selected the options in the parameters section and entered the appropriate data for your system. Once you have done this, you can run the script from the Linux command line:
 
@@ -9,7 +9,7 @@ Adjusting details in the current script allows you to use it to calculate whethe
 
 # NAMDEnergy for X-PLOR format
 
-If you want to use NAMD Energy and your force field is in X-PLOR format, we recommend downloading our version of NAMDEnergy [namdenergy-x-plor.tcl](namdenergy-x-plor.tcl) and modifying line 5 of the NAMDEnergy.tcl script as follows:
+If you want to use NAMDEnergy and your force field is in *X-PLOR format*, we recommend downloading our version of *NAMDEnergy* [namdenergy-x-plor.tcl](namdenergy-x-plor.tcl) and modifying line 5 of the **NAMDEnergy.tcl** script as follows:
 
 replace:
 
