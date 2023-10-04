@@ -104,3 +104,34 @@ Run energy calculations with PME. Only meaningful when combined with -extsys
 **-exe** */path/to/namd2*
 
 Explicitly set the path to the NAMD multicore executable 
+
+
+*Energy types are indicated by options* 
+
+**-all** 
+
+*Bonded energy types*
+
+**-bond** 
+
+**-angl** 
+
+**-dihe** 
+
+**-impr** 
+
+**-conf** 
+
+*non-bonded energy types*
+
+**-vdw** 
+
+**-elec** 
+
+**-nonb**
+
+Note **-nonb** is vwd + elec energy
+
+One or two atom selections should also be given after a **-sel** option in the [NAMDEnergy.tcl](NAMDEnergy.tcl) script to define the atom selections to run energy calculations. The argument for the **-sel** option is a variable containing either one or two atom selections; if a single selection is given (**-sel** *$sel1*), then energies indicated in the options for that selection are calculated. If two selections are given (**-sel** *$sel1* *$sel2*), only the *non-bonded energy types*  between the two selections can be calculated (the Uab). When using two selections take care that the second atom select does not include any atoms from the first. 
+
+Note that all energy output is given in *kcal/mol*, and all force outputs in *kcal/(mol * Å)*. 
