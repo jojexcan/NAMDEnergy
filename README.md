@@ -59,7 +59,7 @@ Number of timesteps between each output in a trajectory; this is purely for book
 
 **-par** *FILE*
 
-One or more parameter files for NAMD to use; a default will be used if none are specified, but you must make sure that it is suitable for your application. Each additional parameter file requires another -par switch.
+One or more parameter files for NAMD to use; a default will be used if none are specified, but you must make sure that it is suitable for your application. Each additional parameter file requires another -par option.
 
 **-drude**
 
